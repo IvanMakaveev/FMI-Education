@@ -6,19 +6,20 @@
 
 ```c++
 #include <iostream>
+using namespace std;
 
 int main()
 {
     int number = 2;
     
     if (number < 2)
-        std::cout << "first";
+        cout << "first";
     else if (number = 0)
-        std::cout << "second";
+        cout << "second";
     else if (number >= 2)
-        std::cout << "third";
+        cout << "third";
     else
-        std::cout << "unknown";
+        cout << "unknown";
 }
 ```
 
@@ -26,21 +27,22 @@ int main()
 
 ```c++
 #include <iostream>
+using namespace std;
 
 int main()
 {
     int num = 25;
     if (num == (10, 25, 35))
     {
-        std::cout << "first";
+        cout << "first";
     }
     else if (num = !num, num += 1, (--num)++)
     {
-        std::cout << "second";
+        cout << "second";
     }
     else
     {
-        std::cout << "third";
+        cout << "third";
     }
 }
 ```
@@ -51,37 +53,39 @@ int main()
 
 ```c++
 #include <iostream>
+using namespace std;
 
 int main()
 {
     int grade;
-    std::cin >> grade;
+    cin >> grade;
     if (grade == 2)
-        std::cout << "fail";
+        cout << "fail";
     else if (grade <= 5)
-        std::cout << "nice";
+        cout << "nice";
     else if (grade == 6)
-        std::cout << "excellent";
+        cout << "excellent";
     else
-        std::cout << "error";
+        cout << "error";
 }
 ```
 
 ```c++
 #include <iostream>
+uusing namspace std;
 
 int main()
 {
     int grade;
-    std::cin >> grade;
+    cin >> grade;
     switch(grade)
     {
-        case 2: std::cout << "fail"; break;
+        case 2: cout << "fail"; break;
         case 3:
         case 4:
-        case 5: std::cout << "nice"; break;
-        case 6: std::cout << "excellent"; break;
-        default: std::cout << "error";
+        case 5: cout << "nice"; break;
+        case 6: cout << "excellent"; break;
+        default: cout << "error";
     }
 }
 ```
