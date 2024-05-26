@@ -1,5 +1,6 @@
 #pragma once
 #include <cstring>
+#include <stdexcept>
 
 template <class T>
 class ArrayView
@@ -61,10 +62,19 @@ bool ArrayView<T>::isEmpty() const {
 
 template <class T>
 ArrayView<T> ArrayView<T>::subArr(unsigned beginInd) {
+    if (beginInd > getSize())
+    {
+		throw std::invalid_argument("Cannot create subview with larger starting index than the original view");
+    }
+    
     return ArrayView<T>(begin + beginInd, getSize() - beginInd);
 }
 
 template <class T>
 ArrayView<T> ArrayView<T>::subArr(unsigned beginInd, size_t size) {
+    if (size + beginIndex > getSize())
+    {
+		throw std::invalid_argument("Cannot create subview with larger scope than the original view");
+    }
     return ArrayView<T>(begin + beginInd, size);
 }
