@@ -21,7 +21,7 @@ public:
 	GameSequence& operator=(const GameSequence& other);
 	GameSequence& operator=(GameSequence&& other) noexcept;
 	~GameSequence();
-	
+
 	void addGameObject(GameObject* gameObject);
 
 	size_t getSize() const;

@@ -109,7 +109,7 @@ int GameSequence::duelTwoPlayers(size_t firstIndex, size_t secondIndex) const
 		return 0;
 	}
 
-	return data[firstIndex]->duelAgainst(data[secondIndex]);
+	return data[firstIndex]->duelAgainst(data[secondIndex]) == 1 ? 1 : 0;
 }
 
 size_t GameSequence::playTournament() const

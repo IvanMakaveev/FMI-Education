@@ -13,13 +13,13 @@ int main()
 
 	size_t players;
 	ifs >> players;
-    GameSequence game(players);
+	GameSequence game(players);
 
 	for (size_t i = 0; i < players; i++)
 	{
 		game.addGameObject(gameObjectFactory(ifs));
 	}
 
-    std::cout << game.playTournament();
+	std::cout << game.playTournament();
 	return 0;
 }

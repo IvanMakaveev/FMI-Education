@@ -6,7 +6,7 @@ Rock::Rock(bool value) : value(value)
 
 int Rock::duelAgainst(const GameObject* other) const
 {
-    return -(other->duelAgainstRock(this));
+	return -(other->duelAgainstRock(this));
 }
 
 int Rock::duelAgainstRock(const Rock* other) const
