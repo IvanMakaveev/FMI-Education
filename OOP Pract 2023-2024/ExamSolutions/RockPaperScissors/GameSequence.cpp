@@ -25,6 +25,7 @@ void GameSequence::free()
 void GameSequence::copyFrom(const GameSequence& other)
 {
 	capacity = other.capacity;
+	size = other.size;
 	data = new GameObject * [capacity];
 	for (size_t i = 0; i < size; i++)
 	{
