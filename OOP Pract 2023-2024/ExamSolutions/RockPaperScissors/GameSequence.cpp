@@ -36,9 +36,11 @@ void GameSequence::moveFrom(GameSequence&& other)
 {
 	capacity = other.capacity;
 	data = other.data;
+	size = other.size;
 
 	other.data = nullptr;
 	other.capacity = 0;
+	other.size = 0;
 }
 
 GameSequence::GameSequence(const GameSequence& other)
