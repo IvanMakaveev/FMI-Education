@@ -1,0 +1,1 @@
+## Линк към Задача 2 - [тук](https://github.com/Angeld55/Object-oriented_programming_FMI/tree/master/Utils/IS_2025_cons)
